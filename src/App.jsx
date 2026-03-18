@@ -7,7 +7,7 @@ import Contact from './contact-us/Contact'
 
 function App() {
   return (
-    <div className='h-full w-full flex flex-col '>
+    <div className='h-full w-screen flex flex-col '>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />}/>
