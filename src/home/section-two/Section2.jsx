@@ -2,7 +2,7 @@ import React from 'react'
 
 function Section2() {
   return (
-    <div className='h-screen bg-rose-300 '>Section2</div>
+    <div className='min-h-screen bg-neutral-300 '>Section2</div>
   )
 }
 
