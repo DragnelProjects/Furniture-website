@@ -3,7 +3,7 @@ import Long from '../images/long-sofa.png'
 
 function ContainerTop() {
   return (
-    <div className='h-[60vh] flex items-center border justify-around border-amber-500 '>
+    <div className='h-[60vh] flex items-center justify-around'>
         <img src={Long} className='h-60 w-100 rounded-2xl ' />
         <div className='h-60 w-[45%] bg-neutral-100 rounded-2xl '>
             lsnlcdwcwdcwaca
