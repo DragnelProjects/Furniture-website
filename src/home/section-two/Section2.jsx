@@ -3,7 +3,7 @@ import Container from './Container'
 
 function Section2() {
   return (
-    <div className='min-h-screen flex items-center justify-center bg-[#1c212e] '>
+    <div className='min-h-screen flex items-center justify-center bg-[#98b5ff] '>
       <Container />
     </div>
   )
