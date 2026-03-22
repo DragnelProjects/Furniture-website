@@ -6,8 +6,10 @@
 
 @layer theme{
     .bg_items{
-        border: 1px solid rgb(107, 107, 107);
-        box-shadow: 4px 5px 22px rgba(0, 0, 0, 0.18);
+        box-shadow: 8px 4px 22px rgba(0, 0, 0, 0.18);
+    }
+    .bg_second{
+        box-shadow:  -8px 8px 12px rgba(0, 0, 0, 0.18);
     }
 }
 
