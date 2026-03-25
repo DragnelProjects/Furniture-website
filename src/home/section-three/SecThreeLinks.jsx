@@ -1,16 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function SecThreeLinks(props) {
-
- 
-
+function SecThreeLinks() {
   return (
     <div className='w-full flex justify-center gap-6 '>
-        <button onClick={() => props.setCategory("all")} className='border border-[gray] text-[12px] text-gray-600 px-4 rounded-full '>All</button>
-        <button onClick={() => props.setCategory("sofa")}  className='border border-[gray] text-[12px] text-gray-600 px-4 rounded-full active:scale-95 '>Sofa</button>
-        <button onClick={() => props.setCategory("table")} className='border border-[gray] text-[12px] text-gray-600 px-4 rounded-full '>Tabel</button>
-        <button onClick={() => props.setCategory("chair")} className='border border-[gray] text-[12px] text-gray-600 px-4 rounded-full '>Chair</button>
-        <button onClick={() => props.setCategory("decorative")} className='border border-[gray] text-[12px] text-gray-600 px-4 rounded-full '>Decorate</button>
+      
+        <Link to='/all' className='link_theme active:scale-95' >All</Link>
+        <Link to='/sofa' className='link_theme active:scale-95'>Sofa</Link>
+        <Link to='table' className='link_theme active:scale-95'>Tabel</Link>
+        <Link to='chair' className='link_theme active:scale-95'>Chair</Link>
+        <Link to='decorative' className='link_theme active:scale-95'>Decorate</Link>
     </div>
   )
 }

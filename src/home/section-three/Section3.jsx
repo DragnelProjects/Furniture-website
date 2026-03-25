@@ -1,14 +1,14 @@
 
 import SecThreeText from './SecThreeText'
 import SecThreeLinks from './SecThreeLinks'
-import SecThreeCards from './SecThreeCards'
+import { Outlet } from 'react-router-dom'
 
-function Section3(props) {
+function Section3() {
   return (
-    <div className='min-h-screen bg-[#f8f9ef] flex flex-col items-center border py-4 gap-6 '>
+    <div className='min-h-screen bg-[#F3F4E5] flex flex-col items-center py-15 gap-8 '>
       <SecThreeText />
-      <SecThreeLinks products={props.products} setCategory={props.setCategory} />
-      <SecThreeCards products={props.products} category={props.category} />
+      <SecThreeLinks />
+      <Outlet />
     </div>
   )
 }

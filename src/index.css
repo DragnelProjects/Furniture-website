@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -13,5 +14,8 @@
     }
 }
 
-
-
+@layer utilities {
+    .link_theme{
+        @apply border border-[gray] text-[12px] text-gray-600 font-medium px-4 py-1 rounded-full;
+    }
+}
