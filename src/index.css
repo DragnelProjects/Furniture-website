@@ -18,4 +18,10 @@
     .link_theme{
         @apply border border-[gray] text-[12px] text-gray-600 font-medium px-4 py-1 rounded-full;
     }
+    .flex_col{
+        @apply flex flex-col items-center;
+    }
+    .text_gray{
+        @apply text-xs text-[#7e859b] font-medium;
+    }
 }
