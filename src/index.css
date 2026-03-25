@@ -22,6 +22,9 @@
         @apply flex flex-col items-center;
     }
     .text_gray{
-        @apply text-xs text-[#7e859b] font-medium;
+        @apply text-[12px] text-center text-[#777777] font-medium leading-4.5;
+    }
+    .title_text{
+        @apply text-4xl text-[#242a30] capitalize  font-semibold ;
     }
 }
