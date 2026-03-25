@@ -7,24 +7,24 @@ function Section4() {
 
   const services = [
     {
-      logo:<RiBox3Line/>,
+      logo:<RiBox3Line size={66}/>,
       service: "Made Your Order",
       discrip: "Your favorite furniture, just a click away."
     },
     {
-      logo:<RiTruckLine/>,
+      logo:<RiTruckLine size={66}/>,
       service: "Free Delivery",
       discrip: "We bring it home, free of charge."
     },
     {
-      logo:<RiSwap2Line/>,
+      logo:<RiSwap2Line size={66}/>,
       service: "Free Exchange",
       discrip: "Easy exchange with no extra cost."
     }
   ]
 
   return (
-    <div className='min-h-[50vh] flex_col bg-[#F3F4E5] gap-4 py-8 border '>
+    <div className='min-h-[50vh] flex_col bg-[#F3F4E5] gap-8 py-8 '>
       <SecFourText />
       <Services services={services} />
     </div>

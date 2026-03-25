@@ -21,6 +21,9 @@
     .flex_col{
         @apply flex flex-col items-center;
     }
+    .just_center{
+        @apply flex flex-col items-center justify-center;
+    }
     .text_gray{
         @apply text-[12px] text-center text-[#777777] font-medium leading-4.5;
     }
