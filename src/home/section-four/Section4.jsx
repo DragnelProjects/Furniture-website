@@ -24,7 +24,7 @@ function Section4() {
   ]
 
   return (
-    <div className='min-h-[50vh] flex_col bg-[#F3F4E5] gap-8 py-8 '>
+    <div className='min-h-[50vh] flex flex-col items-center bg-[#F3F4E5] gap-8 py-8 '>
       <SecFourText />
       <Services services={services} />
     </div>

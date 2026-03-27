@@ -16,16 +16,10 @@
 
 @layer utilities {
     .link_theme{
-        @apply border border-[gray] text-[12px] text-gray-600 font-medium px-4 py-1 rounded-full;
-    }
-    .flex_col{
-        @apply flex flex-col items-center;
-    }
-   
-    .text_gray{
-        @apply text-[12px] text-center text-[#777777] font-medium leading-4.5;
-    }
-    .title_text{
-        @apply text-4xl text-[#242a30] capitalize  font-semibold ;
+        border: 1px solid gray;
+        color: #5a677b;
+        font-weight: 500;
+        padding: 2px 16px;
+         
     }
 }
