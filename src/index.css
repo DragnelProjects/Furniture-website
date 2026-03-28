@@ -12,6 +12,9 @@
     .bg_second{
         box-shadow:  -8px 8px 12px rgba(0, 0, 0, 0.18);
     }
+    .bg_sub{
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.14);
+    }
 }
 
 @layer utilities {
