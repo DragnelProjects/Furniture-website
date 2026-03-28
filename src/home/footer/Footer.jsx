@@ -4,7 +4,7 @@ import FooterBottom from './FooterBottom'
 
 function Footer() {
   return (
-    <div className='min-h-screen flex flex-col border'>
+    <div className='h-70 flex flex-col bg-[#0b0b0b]'>
         <FooterTop/>
         <FooterBottom/>
     </div>
