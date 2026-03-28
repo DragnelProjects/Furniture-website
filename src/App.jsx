@@ -12,6 +12,7 @@ import VasOne from './home/images/vash-one.png'
 import LampOne from './home/images/lamp-one.png'
 import SectionalOne from './home/images/sectional-one.png'
 import SecThreeCards from './home/section-three/SecThreeCards'
+import Footer from './home/footer/Footer'
 
   
 
@@ -67,6 +68,7 @@ function App() {
         <Route path='/product' element={<Product/>} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Footer/>
     </div>
   )
 }
