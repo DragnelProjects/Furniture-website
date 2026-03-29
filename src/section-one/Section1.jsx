@@ -1,5 +1,5 @@
 import React from 'react'
-import sofa from '../images/big-sofa.png'
+import sofa from '../home/images/big-sofa.png'
 import OneMiddle from './OneMiddle'
 
 function Section1() {

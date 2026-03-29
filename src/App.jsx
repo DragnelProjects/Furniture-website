@@ -4,7 +4,7 @@ import { Routes, Route, } from 'react-router-dom'
 import About from './about/About'
 import Product from './product/Product'
 import Contact from './contact-us/Contact'
-import Navbar from './home/section-one/Navbar'
+import Navbar from './section-one/Navbar'
 import SofaOne from './home/images/sofa-one.png'
 import ChairOne from './home/images/chair-one.png'
 import TableOne from './home/images/tabel-one.png'
@@ -13,6 +13,7 @@ import LampOne from './home/images/lamp-one.png'
 import SectionalOne from './home/images/sectional-one.png'
 import SecThreeCards from './home/section-three/SecThreeCards'
 import Section6 from './home/footer/Section6'
+import Section1 from './section-one/Section1'
 
   
 
@@ -57,8 +58,9 @@ function App() {
 
 
   return (
-    <div className='h-full relative w-screen flex flex-col  '>
+    <div className='h-full relative w-screen flex flex-col '>
       <Navbar />
+      <Section1/>
       <Routes>
         <Route path='/' element={<Home/>}>
           <Route index element={<SecThreeCards products={products} />} />
