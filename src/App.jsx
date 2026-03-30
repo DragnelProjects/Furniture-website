@@ -13,7 +13,6 @@ import LampOne from './home/images/lamp-one.png'
 import SectionalOne from './home/images/sectional-one.png'
 import SecThreeCards from './home/section-three/SecThreeCards'
 import Section6 from './home/footer/Section6'
-import Section1 from './section-one/Section1'
 
   
 
@@ -58,9 +57,8 @@ function App() {
 
 
   return (
-    <div className='h-full relative w-screen flex flex-col '>
+    <main className='h-full relative w-screen flex flex-col '>
       <Navbar />
-      <Section1/>
       <Routes>
         <Route path='/' element={<Home/>}>
           <Route index element={<SecThreeCards products={products} />} />
@@ -71,7 +69,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Section6/>
-    </div>
+    </main>
   )
 }
 

@@ -62,7 +62,7 @@ function Section5() {
 ]
 
   return (
-    <div className='min-h-screen flex flex-col items-center bg-[#F3F4E5]  py-4 gap-6'>
+    <div className='min-h-screen flex flex-col items-center  py-4 gap-6'>
         <SecFiveText/>
         <SecFiveCards reviews={reviews} />
     </div>
