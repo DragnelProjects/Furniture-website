@@ -2,7 +2,7 @@ import React from 'react'
 
 function OurTeam() {
   return (
-    <div>OurTeam</div>
+    <div className='min-h-screen'>OurTeam</div>
   )
 }
 

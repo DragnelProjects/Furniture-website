@@ -2,7 +2,7 @@ import React from 'react'
 
 function Curating() {
   return (
-    <div>Curating</div>
+    <div className='min-h-screen'>Curating</div>
   )
 }
 

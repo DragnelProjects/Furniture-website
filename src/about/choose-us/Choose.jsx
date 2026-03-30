@@ -2,7 +2,7 @@ import React from 'react'
 
 function Choose() {
   return (
-    <div>Choose</div>
+    <div className='min-h-screen'>Choose</div>
   )
 }
 
