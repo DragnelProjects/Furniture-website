@@ -38,6 +38,16 @@
         color:  #1a1a1a ;
         text-transform: capitalize;
     }
+    .sub_text{
+        font-size: 14px;
+        font-weight: 450;
+        color: #4b5563;
+    }
+    .greenBtn:hover{
+        background-color: #238059c0;
+        color:#175435 ;
+        transition: all 0.3s ease-in-out;
+    }
 }
 h2{
     font-family: "Playfair Display", serif;
