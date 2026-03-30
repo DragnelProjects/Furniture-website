@@ -4,7 +4,7 @@ import RightContent from './RightContent'
 
 function TopIntro() {
   return (
-    <div className='h-[30vw] flex border'>
+    <div className='h-[30vw] flex  '>
         <LeftContent/>
         <RightContent/>
     </div>
