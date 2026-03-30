@@ -2,7 +2,7 @@ import React from 'react'
 
 function RightContent() {
   return (
-    <div>RightContent</div>
+    <div className=' w-[50%] flex_col items-center border '>RightContent</div>
   )
 }
 

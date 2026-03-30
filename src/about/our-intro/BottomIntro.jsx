@@ -2,7 +2,7 @@ import React from 'react'
 
 function BottomIntro() {
   return (
-    <div>BottomIntro</div>
+    <div  className='min-h-[50vh] border'>BottomIntro</div>
   )
 }
 
