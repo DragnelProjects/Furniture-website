@@ -39,15 +39,15 @@
         justify-content: center; 
     }
     .title_text{
-        font-size: 24px;
-        font-weight: 500;
+        font-size: 28px;
+        font-weight: 600;
         color:  #1a1a1a ;
         text-transform: capitalize;
     }
     .sub_text{
         font-size: 14px;
         font-weight: 450;
-        color: #4b5563;
+        color: #424b58;
     }
     .greenBtn:hover{
         background-color: #238059c0;
