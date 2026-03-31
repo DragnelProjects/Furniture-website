@@ -2,7 +2,7 @@ import React from 'react'
 
 function Concept() {
   return (
-    <div>Concept</div>
+    <div className='w-full flex h-[25vw] border'>Concept</div>
   )
 }
 
