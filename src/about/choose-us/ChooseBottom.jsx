@@ -2,7 +2,7 @@ import React from 'react'
 
 function ChooseBottom() {
   return (
-    <div>ChooseBottom</div>
+    <div className='min-h-[40vw] '>ChooseBottom</div>
   )
 }
 

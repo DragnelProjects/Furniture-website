@@ -38,6 +38,11 @@
         align-items: center;
         justify-content: center; 
     }
+    .items_col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .title_text{
         font-size: 28px;
         font-weight: 600;
