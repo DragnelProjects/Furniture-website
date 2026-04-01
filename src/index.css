@@ -54,6 +54,11 @@
         font-weight: 450;
         color: #424b58;
     }
+    .discription{
+        font-size: 12px;
+        font-weight: 450;
+        color: #424b58;
+    }
     .greenBtn:hover{
         background-color: #238059c0;
         color:#175435 ;
