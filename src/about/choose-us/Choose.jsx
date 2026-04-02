@@ -29,7 +29,7 @@ function Choose() {
   ]
   
   return (
-    <div className='min-h-screen border flex_col gap-8 py-2 '>
+    <div className='min-h-screen flex_col gap-8 py-2 '>
       <ChooseTop reasons={reasons}/>
       <ChooseBottom/>
     </div>
