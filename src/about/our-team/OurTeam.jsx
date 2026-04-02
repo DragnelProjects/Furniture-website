@@ -38,7 +38,7 @@ function OurTeam() {
       </div>
       <div className='border w-full flex justify-center gap-10 py-6  '>
         {workers.map((elem, idx) => (
-          <div key={idx} className='bg-[#ffffff] h-[24vw] w-[20vw] items_col px-4 rounded-xl gap-2 bg_sub '>
+          <div key={idx} className='bg-[#ffffff] h-[24vw] w-[20vw] just_col px-4 rounded-xl gap-2 bg_sub '>
             <div className='h-[40%] w-full '>
               <img src={elem.profilePic} className='h-full w-full object-center' />
             </div>
