@@ -4,7 +4,7 @@ import FooterBg from '../images/bg-footer.png'
 
 function Section6() {
   return (
-    <div className='min-h-screen flex flex-col bg-[#F3F4E5] '>
+    <div className='min-h-screen flex flex-col bg-[#ffffe8] '>
         <div className='h-100  flex flex-col items-center justify-center'>
             <div className='h-[80%] w-[80%] relative  flex flex-col items-center justify-around  rounded-xl gap-2 overflow-hidden z-20 py-15 '>
                 <img src={FooterBg} className='h-full w-full absolute object-cover brightness-45 contrast-105 -z-5 ' />

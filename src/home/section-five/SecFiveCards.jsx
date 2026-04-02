@@ -5,7 +5,7 @@ function SecFiveCards(props) {
   return (
     <div className=' w-full flex flex-wrap justify-center py-4 gap-8 '>
         {props.reviews.map((elem, idx)=>(
-            <div key={idx} className='h-65 w-80 flex flex-col items-center pt-1 pb-4 px-3 rounded bg-[#f6f6f6] gap-2 bg_sub '>
+            <div key={idx} className='h-65 w-80 flex flex-col items-center pt-1 pb-4 px-3 rounded bg-[#ffffff] gap-2 bg_sub '>
                 <div className='w-full flex items-center justify-between px-2 py-1 gap-2 '>
                     <div className='flex items-center gap-2'>
                         <img src={elem.profilePic} className='h-6 w-6 object-cover rounded-full ' />

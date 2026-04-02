@@ -7,7 +7,7 @@ import Section1 from '../section-one/Section1'
 
 function Home() {
   return (
-    <div className='h-full w-full flex flex-col bg-[#f5f1eb] scroll-smooth '>
+    <div className='h-full w-full flex flex-col bg-[#ffffe8] scroll-smooth '>
         <Section1/>
         <Section2 />
         <Section3 />

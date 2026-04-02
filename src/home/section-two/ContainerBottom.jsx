@@ -7,7 +7,7 @@ function ContainerBottom() {
         <div className=' h-60 w-80 rounded-2xl overflow-hidden bg_second '>
             <img src={Flower} className='h-full relative w-full object-bottom object-cover' />
         </div>
-        <div className='h-60 w-[50%] flex flex-col items-center justify-between gap-2 py-6 px-6 bg-[#F1F1F1]  rounded-2xl bg_items border-[#dcdcdc]  '>
+        <div className='h-60 w-[50%] flex flex-col items-center justify-between gap-2 py-6 px-6 bg-[#f7f5f5]  rounded-2xl bg_items border-[#dcdcdc]  '>
             <h2 className='text-[2.5vw] text-center font-semibold capitalize '>Elevate every corner</h2>
             <h5 className='text-[14px] text-justify text-[#373a44] '>
               Discover handcrafted vases, delicated florals, and timeless decore pieces designed to bring balance, texture, and quiet elegance into your space. Every details  is chosen to turn everyday corners into refined visual stories.
