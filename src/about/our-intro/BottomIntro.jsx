@@ -29,7 +29,7 @@ function BottomIntro() {
           <div key={idx} className='bg-[#ffffff] relative h-45 w-[22vw] just_col rounded-2xl px-4 gap-3 bg_sub '>
             <div className='h-12 w-12 -top-6 just_col  absolute bg-[#4c9375] rounded-full text-neutral-100 '>{elem.logo}</div>
             <h2 className='text-[16px] text-[#1a1a1a] font-medium '>{elem.title}</h2>
-            <p className='sub_text leading-6 '>{elem.discription}</p>
+            <p className='discription leading-6 '>{elem.discription}</p>
           </div>
         ))}
       </div>
