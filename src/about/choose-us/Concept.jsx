@@ -22,16 +22,16 @@ function Concept() {
             <p className='discription tracking-wider '>We start with ideas that blend beauty and function.</p>
           </div>
           <div>
-            <h4 className='font-semibold text-[#1a1a1a] tracking-wide '>1.Inspired Design</h4>
-            <p className='discription tracking-wider '>We start with ideas that blend beauty and function.</p>
+            <h4 className='font-semibold text-[#1a1a1a] tracking-wide '>2.Quality Materials</h4>
+            <p className='discription tracking-wider '>We source durable, sustainable materials.</p>
           </div>
           <div>
-            <h4 className='font-semibold text-[#1a1a1a] tracking-wide '>1.Inspired Design</h4>
-            <p className='discription tracking-wider '>We start with ideas that blend beauty and function.</p>
+            <h4 className='font-semibold text-[#1a1a1a] tracking-wide '>3.Expert Crafting</h4>
+            <p className='discription tracking-wider '>Skilled makers bring each pice to life. </p>
           </div>
           <div>
-            <h4 className='font-semibold text-[#1a1a1a] tracking-wide '>1.Inspired Design</h4>
-            <p className='discription tracking-wider '>We start with ideas that blend beauty and function.</p>
+            <h4 className='font-semibold text-[#1a1a1a] tracking-wide '>4.Delivered To Your Home</h4>
+            <p className='discription tracking-wider '>Carefully package and shipped with care.</p>
           </div>
          </div>
       </div>
