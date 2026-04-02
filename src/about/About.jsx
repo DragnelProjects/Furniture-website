@@ -7,7 +7,7 @@ import OurTeam from './our-team/OurTeam'
 
 function About() {
   return (
-    <div className='h-full w-full flex flex-col bg-[#f5f1eb] scroll-smooth '>
+    <div className='h-full w-full flex flex-col bg-[#ffffe8]  scroll-smooth '>
       <Section1/>
       <OurIntro/>
       <Choose/>
