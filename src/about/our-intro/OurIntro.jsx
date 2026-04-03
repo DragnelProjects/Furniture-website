@@ -4,7 +4,7 @@ import BottomIntro from './BottomIntro'
 
 function OurIntro() {
   return (
-    <div className='min-h-screen flex_col py-10 '>
+    <div className='min-h-screen flex_col gap-8 py-10 '>
       <TopIntro/>
       <BottomIntro/>
     </div>

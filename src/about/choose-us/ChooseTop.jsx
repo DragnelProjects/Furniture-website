@@ -2,7 +2,7 @@ import React from 'react'
 
 function ChooseTop(props) {
   return (
-    <div className='min-h-[25vw] items_col gap-4'>
+    <div className='min-h-[25vw] items_col gap-6'>
         <p className='text-[12px] text-[#717881] tracking-wider font-semibold '>Why choose FurniNest</p>
         <h2 className='title_text '>Furniture you can feel good about</h2>
         <div className='flex gap-6 '>

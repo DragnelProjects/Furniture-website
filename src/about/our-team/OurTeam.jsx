@@ -34,8 +34,8 @@ function OurTeam() {
 ]
 
   return (
-    <div className='min-h-screen just_col gap-8 '>
-      <div className='items_col w-full gap-2'>
+    <div className='min-h-screen just_col gap-8 mb-6 '>
+      <div className='items_col w-full gap-4'>
         <h2 className='title_text'>Meet Our Team</h2>
         <p className='sub_text w-[50%] text-center '>Our passion for furniture and design is brought to life by our delitated seust of experts. Get to know the people behind FurniNest.</p>
       </div>
