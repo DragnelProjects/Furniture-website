@@ -64,6 +64,9 @@
         color:#175435 ;
         transition: all 0.3s ease-in-out;
     }
+    .clip{
+        clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 65% 30%, 65% 100%, 35% 100%, 35% 30%, 0% 30%);
+    }
 }
 h2{
     font-family: "Playfair Display", serif;
