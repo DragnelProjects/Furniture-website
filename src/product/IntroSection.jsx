@@ -1,10 +1,11 @@
 import React from 'react'
-import IntroText from './product-images/IntroText'
+import IntroText from './IntroText'
+import Sofa from './product-images/sofa.jpeg'
 
 function IntroSection() {
   return (
-    <div className='w-full h-[80%] flex flex-col items-center justify-center gap-6 mt-4 '>
-        <img src={}  className=' h-full w-full absolute object-center contrast-100 brightness-60 -z-10 ' />
+    <div className='h-screen flex flex-col items-center relative  overflow-hidden z-10 '>
+        <img src={Sofa}  className=' h-full w-full absolute object-cover contrast-100 brightness-40 -z-10 ' />
         <IntroText/>
     </div>
   )
