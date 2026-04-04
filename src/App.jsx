@@ -13,7 +13,10 @@ import LampOne from './home/images/lamp-one.png'
 import SectionalOne from './home/images/sectional-one.png'
 import SecThreeCards from './home/section-three/SecThreeCards'
 import Section6 from './home/footer/Section6'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 
+  gsap.registerPlugin(useGSAP);
   
 
 function App() {
