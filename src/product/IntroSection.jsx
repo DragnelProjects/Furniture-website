@@ -1,6 +1,6 @@
 import React from 'react'
 import IntroText from './IntroText'
-import Sofa from './product-images/sofa.jpeg'
+import Sofa from './product-images/large-sofa-images/sofa.jpeg'
 
 function IntroSection() {
   return (
