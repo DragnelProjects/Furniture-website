@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import ProductCategorie from './ProductCategorie'
 
-function Categories() {
+function Categories(props) {
+
+  const containerRef = useRef();
+
   return (
-    <div className='min-h-[25vw] just_col gap-6 py-8 border '>
+    <div className='min-h-[25vw] w-full  just_col gap-6 py-8  '
+        ref={containerRef}
+    >
         <h2 className='title_text'>Top Categories</h2>
-        <ProductCategorie/>
+        <ProductCategorie categories={props.categories} containerRef={containerRef} />
     </div>
   )
 }
