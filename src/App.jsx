@@ -10,6 +10,7 @@ import Section6 from './home/footer/Section6'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { products } from './javascript/product'
+import ProShow from './product/ProShow'
 
   gsap.registerPlugin(useGSAP);
   
@@ -27,7 +28,9 @@ function App() {
           <Route path=':id' element={<SecThreeCards products={products}  /> } />
         </Route>
         <Route path='/about' element={<About />}/>
-        <Route path='/product' element={<Product/>}/>
+        <Route path='/product' element={<Product/>}>
+            <Route path=':category' element={<ProShow/>} />
+        </Route>
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Section6/>
