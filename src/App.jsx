@@ -10,8 +10,7 @@ import Section6 from './home/footer/Section6'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { products } from './javascript/product'
-import ProShow from './product/NewArrival'
-import NewArrival from './product/NewArrival'
+import NewArrival from './product/new-arrivals/NewArrival'
 
   gsap.registerPlugin(useGSAP);
   
