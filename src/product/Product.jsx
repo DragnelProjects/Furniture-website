@@ -11,6 +11,7 @@ function Product() {
     <div className='h-full w-full flex flex-col bg-[#ffffe8]  scroll-smooth '>
       <IntroSection/>
       <Categories />
+      <Outlet/>
     </div>
   )
 }
