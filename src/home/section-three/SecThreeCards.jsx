@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom'
 
 function SecThreeCards(props) {
 
-  const { category } = useParams();
-  const active = category || 'all';
+  const { id } = useParams();
+  const active = id || 'all';
 
   const filtered = props.products.filter((p)=> p.id === active);
 
