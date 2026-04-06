@@ -10,24 +10,23 @@ import { Link } from 'react-router-dom'
 
 function Categories() {
     const categories = [
-  { name: "sofa2", image: SofaWhite, category2: 'sofa' },
-  { name: "tables2", image: TableBrown, category2: 'tables' },
-  { name: "large sofa2", image: LargeGraySofa, category2: 'large sofa' },
-  { name: "chair2", image: ChairBrown, category2: 'chair' },
-  { name: "decorative2", image: Decorate, category2: 'decorative' },
-  { name: "wall hanging2", image: ChairBrown, category2: 'wall hanging' },
-  { name: "Decorative2", image: Decorate, category2: 'lamps' },
+  { name: "Sofa", image: SofaWhite, category2: 'sofa2' },
+  { name: "Sables", image: TableBrown, category2: 'tables2' },
+  { name: "Large Sofa", image: LargeGraySofa, category2: 'large-sofa2' },
+  { name: "Chair", image: ChairBrown, category2: 'chair2' },
+  { name: "Decorative", image: Decorate, category2: 'decorative2' },
+  { name: "Wall Hangings", image: ChairBrown, category2: 'wall-hanging2' },
 ];
   return (
-    <div className='min-h-[25vw] w-full  just_col gap-6 py-8  '
+    <div className='min-h-[25vw] w-full  just_col gap-4 py-8  '
     >
         <h2 className='title_text'>Top Categories</h2>
-        <div className=' h-[20vw] w-full relative  flex  justify-center   pt-5  overflow-x-auto  perspective-distant'>
+        <div className=' h-[14vw] w-full  flex items-center  justify-center overflow-x-auto gap-5  perspective-distant'>
              {categories.map((cat,) => (
-              <Link key={cat} to={cat.name} >
-                  <div className=' h-[12vw] w-[15vw] flex flex-col items-center justify-center py-1 bg-[#ffff] rounded     transition-all duration-300'>
-                    <img src={cat.image} className='h-[80%] w-[90%]   object-contain mx-auto ' />
-                    <p className='mt-2 text-sm font-medium text-gray-700 '>{cat.name}</p>
+              <Link key={cat} to={cat.category2} >
+                  <div className=' h-[10vw] w-[14vw] relative  flex flex-col items-center justify-center bg-[#ffff] shadow-xl rounded'>
+                    <img src={cat.image} className='h-[85%] w-[85%] rounded ' />
+                    <p className=' absolute bottom-0 text-sm font-medium text-[#1a1c25] text-center bg-[#e8e8e845] w-[95%] h-8 '>{cat.name}</p>
                   </div>
               </Link>
         ))}
