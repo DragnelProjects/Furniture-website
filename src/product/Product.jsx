@@ -5,8 +5,6 @@ import { Outlet } from 'react-router-dom'
 
 function Product() {
 
-
-
   return (
     <div className='h-full w-full flex flex-col bg-[#ffffe8]  scroll-smooth '>
       <IntroSection/>
