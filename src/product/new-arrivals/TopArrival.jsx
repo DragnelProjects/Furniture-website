@@ -11,14 +11,16 @@ function TopArrival(props) {
   const newItems = filtered.filter((p)=> p.isNew === true  );
 
   return (
-    <div className='h-[26vw]  w-full  flex items-center  overflow-x-auto gap-6   border'>
+    <div className='h-[26vw]  w-full  flex items-center  overflow-x-auto gap-4 px-1'>
       {newItems.map((elem, idx) => (
-        <div key={idx} className='h-[22vw] w-[23vw] shrink-0 relative flex flex-col justify-center px-5 bg-gray-200'>
-           <div className='h-[60%] w-full just_col border '>
-                <img src={elem.image} alt={elem.name} className='h-full w-full object-contain ' />
+        <div key={idx} className='h-[24vw] w-[23vw] shrink-0 relative flex flex-col justify-center px-1  bg-[#eeeded5f] rounded gap-2  '>
+           <div className='h-[60%] w-full just_col '>
+                <img src={elem.image} alt={elem.name} className='h-[90%] w-[98%] rounded-xl shadow ' />
            </div>
-           <h4 className='sub_text'>{elem.name}</h4>
-           <h5 className='text-[14px] text-[#3f3e3e] font-medium '>{elem.price}</h5>
+           <div className='flex flex-col h-[5vw] justify-center bg-[#ffffff6f] px-2 shadow '>
+                <h4 className='text-sm font-semibold text-[#212435] '>{elem.name}</h4>
+                <p className='text-[14px] text-[#2b2727] font-bold '>&#8377;{elem.price}</p>
+           </div>
         </div>
       ))}
       
