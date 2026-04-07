@@ -67,6 +67,10 @@
     .clip{
         clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 65% 30%, 65% 100%, 35% 100%, 35% 30%, 0% 30%);
     }
+    .image_style{
+        object-fit: contain;
+        object-position: center;
+    }
 }
 h2{
     font-family: "Playfair Display", serif;
