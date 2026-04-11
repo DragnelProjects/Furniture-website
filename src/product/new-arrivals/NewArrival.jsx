@@ -16,7 +16,7 @@ function NewArrival() {
     <div className='min-h-[50vw] w-full  items_col py-4 px-5 overflow-x-auto perspective-distant border'>
       <ArrivalText/>
       <TopArrival showcaseProduct={showcaseProduct} filtered={filtered} />
-      <BootomArrival/>
+      <BootomArrival showcaseProduct={showcaseProduct} filtered={filtered} />
     </div>
   )
 }
