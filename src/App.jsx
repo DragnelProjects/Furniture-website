@@ -9,10 +9,11 @@ import SecThreeCards from './home/section-three/SecThreeCards'
 import Section6 from './home/footer/Section6'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { products } from './javascript/product'
 import NewArrival from './product/new-arrivals/NewArrival'
 
-  gsap.registerPlugin(useGSAP);
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
   
 
 function App() {
