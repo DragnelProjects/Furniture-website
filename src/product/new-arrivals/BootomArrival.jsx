@@ -9,6 +9,7 @@ function BootomArrival(props) {
     const itemsRef = useRef([]);
     const containerRef = useRef();
     const imageRef = useRef();
+    const sildeRef = useRef();
 
     const newItems = props.filtered.filter((p) => p.isNew === true);
     const itemCount = newItems.length;
@@ -36,6 +37,24 @@ function BootomArrival(props) {
     { dependencies: [currentIndex], scope: containerRef }
   );
 
+  useGSAP(() => {
+     const prodcutInfoTime = gsap.timeline({
+      opacity:0,
+      scrollTrigger:{
+        trigger: 'slideRef',
+        start: 'top 30%',
+        end: 'bottom 80%',
+        scrub: true,
+      }
+     });
+     prodcutInfoTime.from('#productInfo', {
+        x: 100,
+        opacity:1,
+        ease:'power1.in'
+
+     })
+  })
+
   const handleNext = () => {
     if (itemCount === 0) return;
     setCurrentIndex((prev) => (prev + 1) % itemCount);
@@ -62,10 +81,10 @@ function BootomArrival(props) {
       ))}
 
       </div>
-      <div className=' h-[80vh] w-[75%] just_col '>
+      <div ref={sildeRef} className=' h-[80vh] w-[75%] just_col  '>
         <div className='h-[90%] w-[90%] relative flex justify-end rounded-xl  overflow-hidden ' ref={imageRef}>
           <img src={newItems[currentIndex]?.image} alt={newItems[currentIndex]?.name} className='h-full w-full absolute object-cover brightness-75 contrast-115 -z-2 ' />
-          <div className='h-full w-[20vw] flex flex-col bg-[#0000001d] backdrop-blur-[2px] px-3 gap-2 '>
+          <div id='productInfo' className='h-full w-[20vw] flex flex-col bg-[#0000001d] backdrop-blur-[2px] px-3 gap-2 '>
               <h2 className=' text-[#dadee3]  font-semibold py-2'>
                 {newItems[currentIndex]?.name}
               </h2>
