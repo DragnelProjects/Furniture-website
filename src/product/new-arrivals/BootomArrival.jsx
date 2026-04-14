@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { RiArrowUpWideLine,  RiArrowDownWideFill  } from '@remixicon/react'
 
 function BootomArrival(props) {
@@ -9,7 +10,7 @@ function BootomArrival(props) {
     const itemsRef = useRef([]);
     const containerRef = useRef();
     const imageRef = useRef();
-    const sildeRef = useRef();
+
 
     const newItems = props.filtered.filter((p) => p.isNew === true);
     const itemCount = newItems.length;
@@ -39,19 +40,19 @@ function BootomArrival(props) {
 
   useGSAP(() => {
      const prodcutInfoTime = gsap.timeline({
-      opacity:0,
-      scrollTrigger:{
-        trigger: 'slideRef',
+        ScrollTrigger:{
+        trigger: '#slideRef',
+        markers: true,
         start: 'top 30%',
-        end: 'bottom 80%',
+        end: 'bottom 95%',
         scrub: true,
-      }
-     });
-     prodcutInfoTime.from('#productInfo', {
-        x: 100,
-        opacity:1,
-        ease:'power1.in'
-
+      },
+    });
+    prodcutInfoTime.from('#productInfo', {
+      x:100,
+      opacity:0,
+      duration:1.2,
+      ease:'power1.in'
      })
   })
 
@@ -67,8 +68,9 @@ function BootomArrival(props) {
 
   return (
     <div 
-        className='min-h-screen w-full relative flex justify-around '
+        className='min-h-screen w-full relative flex justify-around border '
         ref={containerRef}
+        id='slideRef'
         >
       <div className=' h-[85vh] w-[20vw] relative flex flex-col  items-center overflow-y-hidden py-5 '>
          {newItems.map((elem, idx) => (
@@ -81,7 +83,7 @@ function BootomArrival(props) {
       ))}
 
       </div>
-      <div ref={sildeRef} className=' h-[80vh] w-[75%] just_col  '>
+      <div  className=' h-[80vh] w-[75%] just_col border '>
         <div className='h-[90%] w-[90%] relative flex justify-end rounded-xl  overflow-hidden ' ref={imageRef}>
           <img src={newItems[currentIndex]?.image} alt={newItems[currentIndex]?.name} className='h-full w-full absolute object-cover brightness-75 contrast-115 -z-2 ' />
           <div id='productInfo' className='h-full w-[20vw] flex flex-col bg-[#0000001d] backdrop-blur-[2px] px-3 gap-2 '>
