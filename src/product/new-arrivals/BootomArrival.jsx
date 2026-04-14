@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { RiArrowUpWideLine,  RiArrowDownWideFill  } from '@remixicon/react'
 
 function BootomArrival(props) {
@@ -40,19 +39,17 @@ function BootomArrival(props) {
 
   useGSAP(() => {
      const prodcutInfoTime = gsap.timeline({
-        ScrollTrigger:{
+      scrollTrigger:{
         trigger: '#slideRef',
-        markers: true,
-        start: 'top 30%',
-        end: 'bottom 95%',
-        scrub: true,
+        start: 'top center',
+        toggleActions: 'play none none reverse',
       },
     });
     prodcutInfoTime.from('#productInfo', {
-      x:100,
-      opacity:0,
-      duration:1.2,
-      ease:'power1.in'
+      x: 100,
+      opacity: 0,
+      duration: 1,
+      ease: 'power2.out'
      })
   })
 
@@ -68,7 +65,7 @@ function BootomArrival(props) {
 
   return (
     <div 
-        className='min-h-screen w-full relative flex justify-around border '
+        className='min-h-screen w-full relative flex items-center justify-around '
         ref={containerRef}
         id='slideRef'
         >
@@ -83,7 +80,7 @@ function BootomArrival(props) {
       ))}
 
       </div>
-      <div  className=' h-[80vh] w-[75%] just_col border '>
+      <div  className=' h-[80vh] w-[75%] just_col'>
         <div className='h-[90%] w-[90%] relative flex justify-end rounded-xl  overflow-hidden ' ref={imageRef}>
           <img src={newItems[currentIndex]?.image} alt={newItems[currentIndex]?.name} className='h-full w-full absolute object-cover brightness-75 contrast-115 -z-2 ' />
           <div id='productInfo' className='h-full w-[20vw] flex flex-col bg-[#0000001d] backdrop-blur-[2px] px-3 gap-2 '>
