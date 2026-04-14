@@ -71,6 +71,11 @@
         object-fit: contain;
         object-position: center;
     }
+    .text_gradient{
+        background: linear-gradient(to bottom, #ffffff, #898989);
+        background-clip: text;
+        color: transparent;
+    }
 }
 h2{
     font-family: "Playfair Display", serif;
