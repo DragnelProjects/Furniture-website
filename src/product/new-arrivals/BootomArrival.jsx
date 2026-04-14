@@ -83,19 +83,19 @@ function BootomArrival(props) {
       <div  className=' h-[80vh] w-[75%] just_col'>
         <div className='h-[90%] w-[90%] relative flex justify-end rounded-xl  overflow-hidden ' ref={imageRef}>
           <img src={newItems[currentIndex]?.image} alt={newItems[currentIndex]?.name} className='h-full w-full absolute object-cover brightness-75 contrast-115 -z-2 ' />
-          <div id='productInfo' className='h-full w-[20vw] flex flex-col bg-[#0000001d] backdrop-blur-[2px] px-3 gap-2 '>
-              <h2 className=' text-[#dadee3]  font-semibold py-2'>
+          <div id='productInfo' className='h-full w-[20vw] flex flex-col bg-[#0000005f] backdrop-blur-[2px] px-3 gap-2 '>
+              <h2 className=' text-[#f4f5f6]  font-semibold py-2'>
                 {newItems[currentIndex]?.name}
               </h2>
-              <h5 className='text-xs text-mist-200 tracking-wider leading-5 '>{newItems[currentIndex].description}</h5>
-              <h3 className='text-[18px] text-mist-300 font-semibold '>&#8377;{newItems[currentIndex].price}</h3>
+              <h5 className='text-xs text-[#f4f5f6]  tracking-wider leading-5 '>{newItems[currentIndex].description}</h5>
+              <h3 className='text-[18px] text-[#f4f5f6]  font-semibold '>&#8377;{newItems[currentIndex].price}</h3>
           </div>
         </div>
       </div>
-      <button onClick={handlerPrev} className='absolute left-1/10 top-0 transform -translate-y-1/2 bg-[#212435] text-white p-2 rounded-full shadow hover:bg-[#2b2727] active:scale-95 z-100'>
+      <button onClick={handlerPrev} className='absolute left-1/10 top-16 transform -translate-y-1/2 bg-[#212435] text-white p-2 rounded-full shadow hover:bg-[#2b2727] active:scale-95 z-100'>
         < RiArrowUpWideLine />
       </button>
-      <button onClick={handleNext} className='absolute left-1/10 bottom-10 transform -translate-y-1/2 bg-[#212435] text-white p-2 rounded-full shadow hover:bg-[#2b2727] active:scale-95 z-100'>
+      <button onClick={handleNext} className='absolute left-1/10 bottom-0 transform -translate-y-1/2 bg-[#212435] text-white p-2 rounded-full shadow hover:bg-[#2b2727] active:scale-95 z-100'>
         < RiArrowDownWideFill />
       </button>
     </div>
