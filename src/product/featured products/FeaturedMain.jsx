@@ -9,12 +9,12 @@ function FeaturedMain() {
     const category = searchParams.get('category');
     const active = category || "all2";
     
-    const filteredItems = showcaseProduct.filter((p) => p.category === active  )
+    const filtered = showcaseProduct.filter((p) => p.category === active  )
 
   return (
-    <div className='min-h-[50vw] border'>
+    <div className='min-h-screen flex flex-col items-center py-5 gap-8 border'>
         <FeaturedText/>
-        <FeaturedProduct showcaseProduct={showcaseProduct} filteredItems={filteredItems} />
+        <FeaturedProduct showcaseProduct={showcaseProduct} filtered={filtered} />
     </div>
   )
 }
