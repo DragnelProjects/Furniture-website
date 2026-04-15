@@ -6,15 +6,17 @@ import React from 'react'
 function OneMiddle() {
 
     useGSAP(() => {
-    const pargraphSplit = new SplitText('#subtitle', {type: 'lines'});
-    pargraphSplit.lines.forEach((line) => line.classList.add('text_gradient'))
+    document.fonts.ready.then(() => {
+      const pargraphSplit = new SplitText('#subtitle', {type: 'lines'});
+      pargraphSplit.lines.forEach((line) => line.classList.add('text_gradient'))
 
-    gsap.from(pargraphSplit.lines,{
-      y:100,
-      opacity:0,
-      duration:2.5,
-      ease:'expo.out',
-      stagger: 0.4
+      gsap.from(pargraphSplit.lines,{
+        y:100,
+        opacity:0,
+        duration:2.5,
+        ease:'expo.out',
+        stagger: 0.4
+      })
     })
   })
 
