@@ -2,7 +2,9 @@ import React from 'react'
 
 function FeaturedText() {
   return (
-    <div>FeaturedText</div>
+    <div>
+        <h2>Featured Product</h2>
+    </div>
   )
 }
 

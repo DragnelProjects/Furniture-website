@@ -1,8 +1,16 @@
 import React from 'react'
 
-function FeaturedProduct() {
+function FeaturedProduct(props) {
+    const featuredItems = props.filteredItems.map((p) => p.isFeatured === true )
+
   return (
-    <div>FeaturedProduct</div>
+    <div>
+        {featuredItems.map((elem , idx) => (
+            <div key={idx}>
+                {elem.name}
+            </div>
+        ))}
+    </div>
   )
 }
 
