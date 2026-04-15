@@ -3,11 +3,12 @@ import ArrivalText from './ArrivalText'
 import TopArrival from './TopArrival'
 import BootomArrival from './BootomArrival'
 import { showcaseProduct } from '../../javascript/product'
-import { useParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 
 function NewArrival() {
 
-  const { category } = useParams();
+  const [searchParams] = useSearchParams();
+  const category = searchParams.get('category');
   const active = category || "all2";
 
   const filtered = showcaseProduct.filter((p) => p.category === active);
