@@ -13,6 +13,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from "gsap/SplitText"
 import { products } from './javascript/product'
 import NewArrival from './product/new-arrivals/NewArrival'
+import FeaturedMain from './product/featured products/FeaturedMain'
 
   gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
   
@@ -27,10 +28,7 @@ function App() {
           <Route path=':id' element={<SecThreeCards products={products}  /> } />
         </Route>
         <Route path='/about' element={<About />}/>
-        <Route path='/product' element={<Product/>}>
-            <Route index element={<NewArrival/>} />
-            <Route path=':category' element={<NewArrival/>} />
-        </Route>
+        <Route path='/product' element={<Product/>}/>
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Section6/>

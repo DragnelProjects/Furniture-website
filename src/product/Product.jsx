@@ -1,7 +1,8 @@
 import React from 'react'
 import IntroSection from './IntroSection'
 import Categories from './product-categories/Categories'
-import { Outlet } from 'react-router-dom'
+import NewArrival from './new-arrivals/NewArrival'
+import FeaturedMain from './featured products/FeaturedMain'
 
 function Product() {
 
@@ -9,7 +10,8 @@ function Product() {
     <div className='h-full w-full flex flex-col bg-[#ffffe8]  scroll-smooth '>
       <IntroSection/>
       <Categories />
-      <Outlet/>
+      <NewArrival />
+      <FeaturedMain />
     </div>
   )
 }
