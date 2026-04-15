@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom'
 function NewArrival() {
 
   const { category } = useParams();
-  const active = category || "sofa2";
+  const active = category || "all2";
 
   const filtered = showcaseProduct.filter((p) => p.category === active);
 
