@@ -1,11 +1,12 @@
 import React from 'react'
 import FeaturedText from './FeaturedText'
 import FeaturedProduct from './FeaturedProduct'
-import { useParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { showcaseProduct } from '../../javascript/product'
 
 function FeaturedMain() {
-    const { category } = useParams();
+    const [searchParams] = useSearchParams();
+    const category = searchParams.get('category');
     const active = category || "all2";
     
     const filteredItems = showcaseProduct.filter((p) => p.category === active  )
