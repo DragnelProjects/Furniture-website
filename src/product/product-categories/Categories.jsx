@@ -15,7 +15,7 @@ function Categories() {
   { name: "Large Sofa", image: LargeGraySofa, category2: 'large-sofa2' },
   { name: "Chair", image: ChairBrown, category2: 'chair2' },
   { name: "Decorative", image: Decorate, category2: 'decorative2' },
-  { name: "Wall Hangings", image: ChairBrown, category2: 'wall-hanging2' },
+  { name: "Wall Hangings", image: ChairBrown, category2: 'wall-hangings2' },
   
 ];
   return (
