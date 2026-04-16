@@ -69,6 +69,19 @@ import Decorate9 from '../product/product-images/decorative-images/decorative-it
 import Decorate10 from '../product/product-images/decorative-images/decorative-items (10).png'
 import Decorate11 from '../product/product-images/decorative-images/decorative-items (11).png'
 import Decorate12 from '../product/product-images/decorative-images/decorative-items (12).png'
+//IMPORTS OF WALL HANGING IMAGES OF SHOWCASE PRODUCTS
+import Wall1 from '../product/product-images/wall-hangings/wall-hanging (1).png'
+import Wall2 from '../product/product-images/wall-hangings/wall-hanging (2).png'
+import Wall3 from '../product/product-images/wall-hangings/wall-hanging (3).png'
+import Wall4 from '../product/product-images/wall-hangings/wall-hanging (4).png'
+import Wall5 from '../product/product-images/wall-hangings/wall-hanging (5).png'
+import Wall6 from '../product/product-images/wall-hangings/wall-hanging (6).png'
+import Wall7 from '../product/product-images/wall-hangings/wall-hanging (7).png'
+import Wall8 from '../product/product-images/wall-hangings/wall-hanging (8).png'
+import Wall9 from '../product/product-images/wall-hangings/wall-hanging (9).png'
+import Wall10 from '../product/product-images/wall-hangings/wall-hanging (10).png'
+import Wall11 from '../product/product-images/wall-hangings/wall-hanging (11).png'
+import Wall12 from '../product/product-images/wall-hangings/wall-hanging (12).png'
 
 
 
@@ -181,29 +194,29 @@ export const showcaseProduct = [
   { id: 59, category: "decorative2", name: "Small Table Decor", price: 800, rating: 4.0, isNew: false, isFeatured: false, image: Decorate11, description: "A compact decor item ideal for adding subtle charm to small spaces." },
   { id: 60, category: "decorative2", name: "Artistic Metal Decor", price: 3700, rating: 4.5, isNew: true, isFeatured: true, image: Decorate12, description: "A handcrafted metal decor piece that adds a modern artistic touch." },
 
-  { id: 61, category: "wall-hangings2", name: "Abstract Wall Painting", price: 4500, rating: 4.6, isNew: true, isFeatured: true, image: "wall1.jpg", description: "A vibrant abstract painting that brings energy and creativity to your walls." },
-  { id: 62, category: "wall-hangings2", name: "Wooden Wall Frame", price: 2500, rating: 4.3, isNew: false, isFeatured: false, image: "wall2.jpg", description: "A sturdy wooden frame perfect for displaying photos or artwork." },
-  { id: 63, category: "wall-hangings2", name: "Modern Canvas Art", price: 6000, rating: 4.8, isNew: true, isFeatured: true, image: "wall3.jpg", description: "A modern canvas piece designed to elevate contemporary interiors." },
-  { id: 64, category: "wall-hangings2", name: "Minimal Wall Clock", price: 1800, rating: 4.2, isNew: false, isFeatured: false, image: "wall4.jpg", description: "A clean and minimal wall clock that fits perfectly in modern homes." },
-  { id: 65, category: "wall-hangings2", name: "Luxury Metal Wall Art", price: 8500, rating: 4.9, isNew: true, isFeatured: true, image: "wall5.jpg", description: "A premium metal wall art piece that adds depth and luxury to your decor." },
-  { id: 66, category: "wall-hangings2", name: "Traditional Wall Decor", price: 3000, rating: 4.4, isNew: true, isFeatured: false, image: "wall6.jpg", description: "A traditional decor piece that reflects cultural richness and heritage." },
-  { id: 67, category: "wall-hangings2", name: "Framed Nature Art", price: 4200, rating: 4.5, isNew: false, isFeatured: true, image: "wall7.jpg", description: "Nature-inspired artwork that brings calm and freshness to your space." },
-  { id: 68, category: "wall-hangings2", name: "Geometric Wall Design", price: 5000, rating: 4.6, isNew: true, isFeatured: true, image: "wall8.jpg", description: "A geometric design piece that adds a modern and structured aesthetic." },
-  { id: 69, category: "wall-hangings2", name: "Vintage Wall Clock", price: 3500, rating: 4.3, isNew: false, isFeatured: false, image: "wall9.jpg", description: "A vintage-style wall clock that brings nostalgic charm to your interiors." },
-  { id: 70, category: "wall-hangings2", name: "Luxury Frame Art Set", price: 9200, rating: 4.9, isNew: true, isFeatured: true, image: "wall10.jpg", description: "A premium set of framed artworks designed to create a stunning wall display." },
-  { id: 71, category: "wall-hangings2", name: "Simple Canvas Print", price: 2000, rating: 4.1, isNew: false, isFeatured: false, image: "wall11.jpg", description: "A simple canvas print that adds subtle elegance to your walls." },
-  { id: 72, category: "wall-hangings2", name: "Modern Wall Panel Art", price: 7800, rating: 4.7, isNew: true, isFeatured: true, image: "wall12.jpg", description: "A modern panel art piece designed to create a bold and stylish wall statement." },
+  { id: 61, category: "wall-hangings2", name: "Abstract Wall Painting", price: 4500, rating: 4.6, isNew: true, isFeatured: true, image: Wall1, description: "A vibrant abstract painting that brings energy and creativity to your walls." },
+  { id: 62, category: "wall-hangings2", name: "Wooden Wall Frame", price: 2500, rating: 4.3, isNew: false, isFeatured: false, image: Wall2, description: "A sturdy wooden frame perfect for displaying photos or artwork." },
+  { id: 63, category: "wall-hangings2", name: "Modern Canvas Art", price: 6000, rating: 4.8, isNew: true, isFeatured: true, image: Wall3, description: "A modern canvas piece designed to elevate contemporary interiors." },
+  { id: 64, category: "wall-hangings2", name: "Minimal Wall Clock", price: 1800, rating: 4.2, isNew: false, isFeatured: false, image: Wall4, description: "A clean and minimal wall clock that fits perfectly in modern homes." },
+  { id: 65, category: "wall-hangings2", name: "Luxury Metal Wall Art", price: 8500, rating: 4.9, isNew: true, isFeatured: true, image: Wall5, description: "A premium metal wall art piece that adds depth and luxury to your decor." },
+  { id: 66, category: "wall-hangings2", name: "Traditional Wall Decor", price: 3000, rating: 4.4, isNew: true, isFeatured: false, image: Wall6, description: "A traditional decor piece that reflects cultural richness and heritage." },
+  { id: 67, category: "wall-hangings2", name: "Framed Nature Art", price: 4200, rating: 4.5, isNew: false, isFeatured: true, image: Wall7, description: "Nature-inspired artwork that brings calm and freshness to your space." },
+  { id: 68, category: "wall-hangings2", name: "Geometric Wall Design", price: 5000, rating: 4.6, isNew: true, isFeatured: true, image: Wall8, description: "A geometric design piece that adds a modern and structured aesthetic." },
+  { id: 69, category: "wall-hangings2", name: "Vintage Wall Clock", price: 3500, rating: 4.3, isNew: false, isFeatured: false, image: Wall9, description: "A vintage-style wall clock that brings nostalgic charm to your interiors." },
+  { id: 70, category: "wall-hangings2", name: "Luxury Frame Art Set", price: 9200, rating: 4.9, isNew: true, isFeatured: true, image: Wall10, description: "A premium set of framed artworks designed to create a stunning wall display." },
+  { id: 71, category: "wall-hangings2", name: "Simple Canvas Print", price: 2000, rating: 4.1, isNew: false, isFeatured: false, image: Wall11, description: "A simple canvas print that adds subtle elegance to your walls." },
+  { id: 72, category: "wall-hangings2", name: "Modern Wall Panel Art", price: 7800, rating: 4.7, isNew: true, isFeatured: true, image: Wall12, description: "A modern panel art piece designed to create a bold and stylish wall statement." },
 
   { id: 73, category: "all2", name: "Oak Wood White Sofa", price: 25000, rating: 4.5, isNew: true, isFeatured: true, image: Sofa1, description: "Crafted from sturdy oak wood with soft white upholstery, this sofa brings a clean and timeless charm to your living room." },
   { id: 74, category: "all2", name: "Artistic Metal Decor", price: 3700, rating: 4.5, isNew: true, isFeatured: true, image: Decorate12, description: "A handcrafted metal decor piece that adds a modern artistic touch." },
    { id: 75, category: "all2", name: "Designer Center Table", price: 16000, rating: 4.7, isNew: true, isFeatured: true, image: Table12, description: "A stylish designer center table that acts as a focal point in your living room." },
    { id: 76, category: "all2", name: "Premium Lounge Chair", price: 13000, rating: 4.8, isNew: false, isFeatured: true, image: Chair12, description: "A premium lounge chair designed for relaxation with plush cushioning." },
    { id: 77, category: "all2", name: "Wide Cushion Sofa Set", price: 73000, rating: 4.6, isNew: true, isFeatured: false, image: LargeSofa12, description: "Wide seating and plush cushions make this sofa set perfect for relaxed gatherings." },
-   { id: 78, category: "all2", name: "Framed Nature Art", price: 4200, rating: 4.5, isNew: false, isFeatured: true, image: "wall7.jpg", description: "Nature-inspired artwork that brings calm and freshness to your space." },
+   { id: 78, category: "all2", name: "Framed Nature Art", price: 4200, rating: 4.5, isNew: false, isFeatured: true, image: Wall7, description: "Nature-inspired artwork that brings calm and freshness to your space." },
   { id: 79, category: "all2", name: "Modern Sculpture Piece", price: 5000, rating: 4.8, isNew: false, isFeatured: true, image: Decorate7, description: "A modern sculpture that adds artistic flair and personality to your space." },
   { id: 80, category: "all2", name: "Rocking Chair Wooden", price: 11000, rating: 4.7, isNew: true, isFeatured: true, image: Chair8, description: "A classic wooden rocking chair perfect for relaxing moments and cozy corners." },
   { id: 81, category: "all2", name: "Elegant Living Room Sofa", price: 72000, rating: 4.7, isNew: true, isFeatured: false, image:LargeSofa6, description: "An elegant centerpiece sofa that enhances the beauty of any living room." },
     { id: 82, category: "all2", name: "Soft Cushion Beige Sofa", price: 27000, rating: 4.4, isNew: true, isFeatured: false, image:Sofa8, description: "Soft beige cushions and a cozy design make this sofa perfect for warm and inviting interiors." },
- { id: 83, category: "all2", name: "Wooden Wall Frame", price: 2500, rating: 4.3, isNew: false, isFeatured: false, image: "wall2.jpg", description: "A sturdy wooden frame perfect for displaying photos or artwork." },
-  { id: 72, category: "all2", name: "Modern Wall Panel Art", price: 7800, rating: 4.7, isNew: true, isFeatured: true, image: "wall12.jpg", description: "A modern panel art piece designed to create a bold and stylish wall statement." }
+ { id: 83, category: "all2", name: "Wooden Wall Frame", price: 2500, rating: 4.3, isNew: false, isFeatured: false, image: Wall2, description: "A sturdy wooden frame perfect for displaying photos or artwork." },
+  { id: 72, category: "all2", name: "Modern Wall Panel Art", price: 7800, rating: 4.7, isNew: true, isFeatured: true, image: Wall12, description: "A modern panel art piece designed to create a bold and stylish wall statement." }
 ];
