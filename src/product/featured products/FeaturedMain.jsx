@@ -12,7 +12,7 @@ function FeaturedMain() {
     const filtered = showcaseProduct.filter((p) => p.category === active  )
 
   return (
-    <div className='min-h-screen flex flex-col items-center py-5 gap-8 border'>
+    <div className='min-h-screen flex flex-col items-center py-5 gap-8'>
         <FeaturedText/>
         <FeaturedProduct showcaseProduct={showcaseProduct} filtered={filtered} />
     </div>
