@@ -5,7 +5,7 @@ function FeaturedProduct(props) {
     const featuredItems = props.filtered.filter((p) => p.isFeatured === true ).slice(0, 6);
 
   return (
-    <div id='productDiv' className='w-full min-h-[50vw] grid grid-cols-3 auto-rows-fr gap-4 p-4'>
+    <div id='productDiv' className='w-full min-h-[50vw] grid grid-cols-3  auto-rows-fr gap-4 p-4'>
       {featuredItems.map((el, idx) => (
         <div
           key={idx}
