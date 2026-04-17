@@ -2,7 +2,7 @@ import React from 'react'
 
 function Address() {
   return (
-    <div>Address</div>
+    <div className='h-[80%] w-[25vw] border '>Address</div>
   )
 }
 

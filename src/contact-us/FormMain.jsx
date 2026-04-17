@@ -1,8 +1,13 @@
 import React from 'react'
+import ContactForm from './ContactForm'
+import Address from './Address'
 
 function FormMain() {
   return (
-    <div>FormMain</div>
+    <div className='h-[86vh] flex items-center justify-center gap-6 border '>
+        <ContactForm/>
+        <Address/>
+    </div>
   )
 }
 
