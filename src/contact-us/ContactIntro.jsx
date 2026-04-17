@@ -7,7 +7,7 @@ import Leaf3 from './contact-images/8e1218156a071e26cd7549e613530a99.png'
 
 function ContactIntro() {
   return (
-    <div className='h-[40vw] w-full relative just_col border z-10 '>
+    <div className='h-[40vw] w-full relative just_col z-10 '>
         <div className='h-11 w-full absolute top-0 bg-[#ec3c0bde]'></div>
         <img src={Leaf} className='h-[46vw] absolute rotate-85 -top-4 -left-1 -z-2 ' />
         <h2 className='text-6xl text-center tracking-wide w-130  '>Our do<span className='text-[#f8f8f8] '>ors</span> <span className='text-[#f8f8f8] '>are</span> always <span className='text-[#f8f8f8] '>open!</span></h2>
