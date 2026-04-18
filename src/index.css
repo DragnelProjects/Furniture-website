@@ -83,3 +83,22 @@ h2{
 main{
     font-family: "Inter", sans-serif;
 }
+
+input:focus{
+    border-bottom-color: rgb(69, 67, 67);
+    transition: all 0.4s ease;
+}
+input:focus ~ .lines{
+    transform: translateY(32px) translateX(5px);
+    font-size: 12.5px;
+    transition: all 0.5s ease;
+}
+textarea:focus{
+    border-bottom-color: rgb(69, 67, 67);
+    transition: all 0.4s ease;
+}
+textarea:focus ~ .lines{
+    transform: translateY(32px) translateX(5px);
+    font-size: 12.5px;
+    transition: all 0.5s ease;
+}
