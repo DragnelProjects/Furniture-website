@@ -4,7 +4,7 @@ import Address from './Address'
 
 function FormMain() {
   return (
-    <div className='h-[86vh] flex items-center justify-center gap-6 border '>
+    <div className='h-[86vh] flex items-center justify-center  border '>
         <ContactForm/>
         <Address/>
     </div>
