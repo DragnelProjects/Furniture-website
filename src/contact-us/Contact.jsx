@@ -4,10 +4,11 @@ import FormMain from './FormMain'
 
 
 function Contact() {
+
   return (
-    <div className='h-full w-full flex flex-col bg-[#ffffe8] scroll-smooth '>
+    <div  className='h-full w-full flex flex-col bg-[#ffffe8] scroll-smooth '>
       <ContactIntro/>
-      <FormMain/>
+      <FormMain />
     </div>
   )
 }
