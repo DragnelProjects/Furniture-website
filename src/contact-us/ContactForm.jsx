@@ -1,15 +1,32 @@
 import React from 'react'
-import Loader from './Loader'
 
-function ContactForm() {
-
-
+function ContactForm({ onSubmit }) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Get form values (optional, for actual submission)
+    const userName = document.getElementById('userName').value;
+    const userEmail = document.getElementById('userEmail').value;
+    const userPhone = document.getElementById('userPhone').value;
+    const userMessage = document.getElementById('userMessage').value;
+    
+    // Validate form
+    if (userName && userEmail && userPhone && userMessage) {
+      // Call the onSubmit callback from parent
+      if (onSubmit) {
+        onSubmit();
+      }
+      // Clear form
+      document.getElementById('contactForm').reset();
+    } else {
+      alert('Please fill all fields');
+    }
+  };
 
   return (
     <div className='bg-[white] min-h-[90%] w-[35vw] flex flex-col py-2 px-5 gap-2 '>
         <h2 className='font-medium text-[1.3rem] tracking-wider text-[#181a1f] '>Contact Form</h2>
         <h2 className='text-[#c1c1c1] text-[0.8rem] w-60 tracking-wider leading-5 '>Fill this out so we can learn more about you and your needs.</h2>
-        <form action="#" className='w-full h-[24vw] flex flex-col items-end gap-6 py-2 '>
+        <form id='contactForm' onSubmit={handleSubmit} className='w-full h-[24vw] flex flex-col items-end gap-6 py-2 '>
             <div className=' h-[3.5vw] w-full relative '>
               <input type="text" 
                 id='userName'
@@ -41,7 +58,6 @@ function ContactForm() {
             </div>
             <input  type="submit" value="SEND MESSAGE"
               className='border border-[#777171] w-[8vw] text-[0.6rem] text-[#4f4f57] font-semibold py-1.5 mt-2 active:scale-95 active:text-[black] '
-              
               />
             
         </form>
