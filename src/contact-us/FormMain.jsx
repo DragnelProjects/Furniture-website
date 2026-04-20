@@ -19,7 +19,7 @@ function FormMain() {
   };
 
   return (
-    <div ref={mainDisplay} className='h-[86vh] flex items-center justify-center border relative'>
+    <div ref={mainDisplay} className='h-[86vh] flex items-center justify-center relative'>
       {isLoading && (
         <div className='fixed inset-0 bg-[#16151546] backdrop-blur-[5px] bg-opacity-50 flex items-center justify-center z-50'>
           <Loader />
