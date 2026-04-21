@@ -15,7 +15,7 @@ function Navbar() {
       <div className=' flex items-center gap-5'>
         <RiSearch2Line size={16} color='#d1d1d1' />
         <RiHeartLine size={16} color='#d1d1d1' />
-        <RiLuggageCartLine size={16} color='#d1d1d1' />
+        <Link to='/cart' ><RiLuggageCartLine size={16} color='#d1d1d1' /></Link>
         <h5 className='text-[#ebebeb] text-[14px] border-l border-l-[#858585] pl-2 '>Login</h5>
       </div>
     </div>
