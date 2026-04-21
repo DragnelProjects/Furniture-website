@@ -14,6 +14,7 @@ import { SplitText } from "gsap/SplitText"
 import { products } from './javascript/product'
 import NewArrival from './product/new-arrivals/NewArrival'
 import FeaturedMain from './product/featured products/FeaturedMain'
+import Cart from './cart/Cart'
 
   gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
   
@@ -30,6 +31,7 @@ function App() {
         <Route path='/about' element={<About />}/>
         <Route path='/product' element={<Product/>}/>
         <Route path='/contact' element={<Contact />} />
+        <Route path='/cart' element={<Cart/>} />
       </Routes>
       <Section6/>
     </main>
