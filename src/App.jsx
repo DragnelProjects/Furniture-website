@@ -15,26 +15,29 @@ import { products } from './javascript/product'
 import NewArrival from './product/new-arrivals/NewArrival'
 import FeaturedMain from './product/featured products/FeaturedMain'
 import Cart from './cart/Cart'
+import { CartProvider } from './context/CartContext'
 
   gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
   
 
 function App() {
   return (
-    <main className='h-full relative w-screen flex flex-col '>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home/>}>
-          <Route index element={<SecThreeCards products={products}  /> } />
-          <Route path=':id' element={<SecThreeCards products={products}  /> } />
-        </Route>
-        <Route path='/about' element={<About />}/>
-        <Route path='/product' element={<Product/>}/>
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/cart' element={<Cart/>} />
-      </Routes>
-      <Section6/>
-    </main>
+    <CartProvider>
+      <main className='h-full relative w-screen flex flex-col '>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home/>}>
+            <Route index element={<SecThreeCards products={products}  /> } />
+            <Route path=':id' element={<SecThreeCards products={products}  /> } />
+          </Route>
+          <Route path='/about' element={<About />}/>
+          <Route path='/product' element={<Product/>}/>
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/cart' element={<Cart/>} />
+        </Routes>
+        <Section6/>
+      </main>
+    </CartProvider>
   )
 }
 
