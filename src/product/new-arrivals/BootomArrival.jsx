@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react';
 import { RiArrowUpWideLine,  RiArrowDownWideFill  } from '@remixicon/react'
+import { useCart } from '../../hooks/useCart'
 
 function BootomArrival(props) {
 
@@ -9,6 +10,7 @@ function BootomArrival(props) {
     const itemsRef = useRef([]);
     const containerRef = useRef();
     const imageRef = useRef();
+    const { addToCart } = useCart();
 
 
     const newItems = props.filtered.filter((p) => p.isNew === true);
@@ -89,6 +91,12 @@ function BootomArrival(props) {
               </h2>
               <h5 className='text-xs text-[#f4f5f6]  tracking-wider leading-5 '>{newItems[currentIndex].description}</h5>
               <h3 className='text-[18px] text-[#f4f5f6]  font-semibold '>&#8377;{newItems[currentIndex].price}</h3>
+              <button
+                onClick={() => addToCart(newItems[currentIndex])}
+                className='w-32 bg-gradient-to-r from-[#094b28] to-[rgb(102,166,131)] h-10 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#40b476] before:to-[rgb(174,244,205)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff] active:scale-95'
+              >
+                Add to Cart
+              </button>
           </div>
         </div>
       </div>

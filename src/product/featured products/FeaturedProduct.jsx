@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
+import { useCart } from '../../hooks/useCart'
 
 function FeaturedProduct(props) {
   const [activeIndex, setActiveIndex] = useState(null)
   const cardRefs = useRef([])
+  const { addToCart } = useCart()
 
   const featuredItems = props.filtered.filter((p) => p.isFeatured === true).slice(0, 6)
 
@@ -88,7 +90,16 @@ function FeaturedProduct(props) {
                 <p className='text-[13px] leading-6 text-[#4a4a4a] mb-4'>
                   {el.description || 'This product has premium detailing and crafted comfort for your space.'}
                 </p>
-                <button className='w-full rounded-md bg-[#1a1b1e] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#333333]'>Add to cart</button>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    addToCart(el);
+                    setActiveIndex(null);
+                  }}
+                  className='w-full rounded-md bg-[#1a1b1e] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#333333]'
+                >
+                  Add to cart
+                </button>
               </div>
             </div>
 

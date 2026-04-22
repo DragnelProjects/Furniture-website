@@ -1,11 +1,13 @@
 import React, { useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react';
+import { useCart } from '../../hooks/useCart'
 
 function TopArrival(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsRef = useRef([]);
   const containerRef = useRef();
+  const { addToCart } = useCart();
 
   const newItems = props.filtered.filter((p) => p.isNew === true);
   const itemCount = newItems.length;
@@ -53,6 +55,12 @@ function TopArrival(props) {
            <div className='flex flex-col h-[5vw] justify-center bg-[#ffffff6f] px-2 shadow '>
                 <h4 className='text-sm font-semibold text-[#212435] '>{elem.name}</h4>
                 <p className='text-[14px] text-[#2b2727] font-bold '>&#8377;{elem.price}</p>
+                <button
+                  onClick={() => addToCart(elem)}
+                  className='mt-1 bg-[#212435] text-white px-2 py-1 rounded text-xs hover:bg-[#2b2727]'
+                >
+                  Add to Cart
+                </button>
            </div>
         </div>
       ))}
