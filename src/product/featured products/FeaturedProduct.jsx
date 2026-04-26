@@ -17,7 +17,7 @@ function FeaturedProduct(props) {
         gsap.set(card, { position: 'fixed', left: '50%', top: '50%', zIndex: 50, transformOrigin: 'center center' })
         gsap.fromTo(card, 
           { x: '-50%', y: '-50%', scale: 1 },
-          { x: '-50%', y: '-50%', scale: 1.2, duration: 0.8, ease: 'power3.out' }
+          { x: '-50%', y: '-50%', scale: 1.1, duration: 0.8, ease: 'power3.out' }
         )
       } else {
         gsap.set(card, { position: 'relative', left: 'auto', top: 'auto', zIndex: 1 })
@@ -59,7 +59,7 @@ function FeaturedProduct(props) {
             }`}
             style={{ transformOrigin: 'center center' }}
           >
-            <div className='h-55 w-full overflow-hidden rounded-t'>
+            <div className='h-[15vw] w-full overflow-hidden rounded-t'>
               <img
                 src={el.image}
                 alt={el.name}
@@ -90,16 +90,18 @@ function FeaturedProduct(props) {
                 <p className='text-[13px] leading-6 text-[#4a4a4a] mb-4'>
                   {el.description || 'This product has premium detailing and crafted comfort for your space.'}
                 </p>
-                <button 
+                <div className='w-full flex items-center justify-center'>
+                  <button 
                   onClick={(e) => {
                     e.stopPropagation();
                     addToCart(el);
                     setActiveIndex(null);
                   }}
-                  className='w-full rounded-md bg-[#1a1b1e] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#333333]'
+                  className='w-[80%] rounded-md bg-[#1a1b1e] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#333333] active:scale-90 '
                 >
                   Add to cart
                 </button>
+                </div>
               </div>
             </div>
 
