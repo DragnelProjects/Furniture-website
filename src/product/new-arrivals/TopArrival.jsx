@@ -57,7 +57,7 @@ function TopArrival(props) {
                 <p className='text-[14px] text-[#2b2727] font-bold '>&#8377;{elem.price}</p>
                 <button
                   onClick={() => addToCart(elem)}
-                  className='mt-1 bg-[#212435] text-white px-2 py-1 rounded text-xs hover:bg-[#2b2727]'
+                  className='mt-1  bg-linear-to-r from-[#151515] to-[rgb(49,49,49)] text-white px-2 py-1 rounded text-xs hover:bg-[#2b2727]  '
                 >
                   Add to Cart
                 </button>
