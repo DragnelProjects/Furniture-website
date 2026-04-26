@@ -25,7 +25,7 @@ function Categories() {
         <div className=' h-[14vw] w-full  flex items-center  justify-center overflow-x-auto gap-5  perspective-distant'>
              {categories.map((cat, idx) => (
               <Link key={idx} to={`?category=${cat.category2}`} >
-                  <div className=' h-[10vw] w-[14vw] relative  flex flex-col items-center justify-center bg-[#ffff] shadow-xl rounded'>
+                  <div className=' h-[10vw] w-[14vw] relative  flex flex-col items-center justify-center bg-[#ffff] shadow-xl rounded active:scale-90 duration-200 ease-in-out'>
                     <img src={cat.image} className='h-[85%] w-[85%] rounded ' />
                     <p className=' absolute bottom-0 text-sm font-medium text-[#1a1c25] text-center bg-[#e8e8e845] w-[95%] h-8 '>{cat.name}</p>
                   </div>
