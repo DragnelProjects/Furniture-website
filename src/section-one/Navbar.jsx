@@ -2,11 +2,28 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {RiSearch2Line, RiHeartLine, RiLuggageCartLine } from '@remixicon/react'
 import { useCart } from '../hooks/useCart'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 function Navbar() {
   const { getTotalItems } = useCart()
+  useGSAP(() => {
+    const navTime = gsap.timeline({
+      scrollTrigger: {
+        trigger: 'nav',
+        start: 'bottom top',
+        toggleActions: 'play none none reverse'
+      }
+    })
+    navTime.fromTo('nav', {backgroundColor: 'transparent'}, {
+      backgroundColor: '#00000080',
+      duration: 0.5,
+      ease: 'power1.inOut'
+    })
+  })
+
   return (
-    <div className=' flex w-full absolute top-0 items-center justify-between py-1 px-12 z-20 '>
+    <nav className=' flex w-full fixed top-0 items-center justify-between py-1 px-12 z-100 '>
       <h2 className='text-3xl text-[#ebebeb] font-light '>FurniNest</h2>
       <div className=' flex text-[14px] text-[#ebebeb] font-[250]  gap-12'>
        <Link to='/' >Home</Link>
@@ -27,7 +44,7 @@ function Navbar() {
         </Link>
         <h5 className='text-[#ebebeb] text-[14px] border-l border-l-[#858585] pl-2 '>Login</h5>
       </div>
-    </div>
+    </nav>
   )
 }
 
