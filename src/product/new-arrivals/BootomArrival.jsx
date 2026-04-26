@@ -67,14 +67,14 @@ function BootomArrival(props) {
 
   return (
     <div 
-        className='min-h-screen w-full relative flex items-center justify-around '
+        className='min-h-screen w-full relative flex pt-8  justify-around '
         ref={containerRef}
         id='slideRef'
         >
-      <div className=' h-[85vh] w-[20vw] relative flex flex-col  items-center overflow-y-hidden py-5 '>
+      <div className=' h-[75vh] w-[20vw] relative flex flex-col items-center overflow-y-hidden py-5 '>
          {newItems.map((elem, idx) => (
         <div key={idx} 
-          className='h-[12vw] w-[16vw] shrink-0 absolute flex flex-col justify-center px-1  bg-[#eeeded5f] rounded gap-2  '
+          className='h-[10vw] w-[16vw] shrink-0 absolute flex flex-col justify-center px-1  bg-[#eeeded5f] rounded gap-2  '
           ref={(el) => itemsRef.current[idx] = el}
         >
           <img src={elem.image} alt={elem.name} className='h-[90%] w-[98%] rounded-xl shadow ' />
@@ -82,7 +82,7 @@ function BootomArrival(props) {
       ))}
 
       </div>
-      <div  className=' h-[80vh] w-[75%] just_col'>
+      <div  className=' h-[70vh] w-[75%] just_col'>
         <div className='h-[90%] w-[90%] relative flex justify-end rounded-xl  overflow-hidden ' ref={imageRef}>
           <img src={newItems[currentIndex]?.image} alt={newItems[currentIndex]?.name} className='h-full w-full absolute object-cover brightness-75 contrast-115 -z-2 ' />
           <div id='productInfo' className='h-full w-[20vw] flex flex-col bg-[#0000005f] backdrop-blur-[2px] px-3 gap-2 '>
@@ -93,17 +93,17 @@ function BootomArrival(props) {
               <h3 className='text-[18px] text-[#f4f5f6]  font-semibold '>&#8377;{newItems[currentIndex].price}</h3>
               <button
                 onClick={() => addToCart(newItems[currentIndex])}
-                className='w-32 bg-gradient-to-r from-[#094b28] to-[rgb(102,166,131)] h-10 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#40b476] before:to-[rgb(174,244,205)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#fff] active:scale-95'
+                className='w-32 bg-linear-to-r from-[#151515] to-[rgb(49,49,49)] h-10 my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-linear-to-r before:from-[#151515] before:to-[rgb(82,80,80)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[white] active:scale-90'
               >
                 Add to Cart
               </button>
           </div>
         </div>
       </div>
-      <button onClick={handlerPrev} className='absolute left-1/10 top-16 transform -translate-y-1/2 bg-[#212435] text-white p-2 rounded-full shadow hover:bg-[#2b2727] active:scale-95 z-100'>
+      <button onClick={handlerPrev} className='absolute left-1/11 top-14 transform -translate-y-1/2 bg-[#212435] text-white px-4 rounded-full shadow hover:bg-[#2b2727] active:scale-95 z-100'>
         < RiArrowUpWideLine />
       </button>
-      <button onClick={handleNext} className='absolute left-1/10 bottom-0 transform -translate-y-1/2 bg-[#212435] text-white p-2 rounded-full shadow hover:bg-[#2b2727] active:scale-95 z-100'>
+      <button onClick={handleNext} className='absolute left-1/11 bottom-22 transform -translate-y-1/2 bg-[#212435] text-white  px-4 rounded-full shadow hover:bg-[#2b2727] active:scale-95 z-100'>
         < RiArrowDownWideFill />
       </button>
     </div>
