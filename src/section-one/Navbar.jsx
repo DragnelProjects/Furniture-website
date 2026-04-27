@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import {RiSearch2Line, RiHeartLine, RiLuggageCartLine } from '@remixicon/react'
 import { useCart } from '../hooks/useCart'
 import { useGSAP } from '@gsap/react'
@@ -7,6 +7,15 @@ import gsap from 'gsap'
 
 function Navbar() {
   const { getTotalItems } = useCart()
+  const location = useLocation()
+  
+  const getLinkClass = (path) => {
+    const baseClass = 'active:scale-95 transition-colors duration-200'
+    const isActive = location.pathname === path
+    return isActive 
+      ? `${baseClass} text-[#D47968] font-semibold` 
+      : baseClass
+  }
   useGSAP(() => {
     const navTime = gsap.timeline({
       scrollTrigger: {
@@ -16,8 +25,8 @@ function Navbar() {
       }
     })
     navTime.fromTo('nav', {backgroundColor: 'transparent'}, {
-      backgroundColor: '#00000080',
-      duration: 0.5,
+      backgroundColor: '#00000070',
+      duration: 1,
       ease: 'power1.inOut'
     })
   })
@@ -26,10 +35,10 @@ function Navbar() {
     <nav className=' flex w-full fixed top-0 items-center justify-between py-1 px-12 z-100 '>
       <h2 className='text-3xl text-[#ebebeb] font-light '>FurniNest</h2>
       <div className=' flex text-[14px] text-[#ebebeb] font-[250]  gap-12'>
-       <Link to='/' >Home</Link>
-       <Link to='/about' className='active:scale-95' >About</Link>
-       <Link to='/product' >Product</Link>
-       <Link to='/contact' >Contact</Link>
+       <Link to='/' className={getLinkClass('/')}>Home</Link>
+       <Link to='/about' className={getLinkClass('/about')}>About</Link>
+       <Link to='/product' className={getLinkClass('/product')}>Product</Link>
+       <Link to='/contact' className={getLinkClass('/contact')}>Contact</Link>
       </div>
       <div className=' flex items-center gap-5'>
         <RiSearch2Line size={16} color='#d1d1d1' />

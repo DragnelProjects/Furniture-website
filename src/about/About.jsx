@@ -4,11 +4,12 @@ import OurIntro from './our-intro/OurIntro'
 import Choose from './choose-us/Choose'
 import Curating from './curating-files/Curating'
 import OurTeam from './our-team/OurTeam'
+import AboutIntro from './AboutIntro'
 
 function About() {
   return (
     <div className='h-full w-full flex flex-col bg-[#ffffe8] gap-8 scroll-smooth '>
-      <Section1/>
+      <AboutIntro/>
       <OurIntro/>
       <Choose/>
       <Curating/>
