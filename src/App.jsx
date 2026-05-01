@@ -16,6 +16,7 @@ import NewArrival from './product/new-arrivals/NewArrival'
 import FeaturedMain from './product/featured products/FeaturedMain'
 import Cart from './cart/Cart'
 import { CartProvider } from './context/CartContext'
+import Login from './about/login-info/Login'
 
   gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
   
@@ -34,6 +35,7 @@ function App() {
           <Route path='/product' element={<Product/>}/>
           <Route path='/contact' element={<Contact />} />
           <Route path='/cart' element={<Cart/>} />
+          <Route path='/login' element={<Login/>} />
         </Routes>
         <Section6/>
       </main>

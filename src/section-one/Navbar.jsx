@@ -51,7 +51,7 @@ function Navbar() {
             </span>
           )}
         </Link>
-        <h5 className='text-[#ebebeb] text-[14px] border-l border-l-[#858585] pl-2 '>Login</h5>
+        <Link to='/login' >Login</Link>
       </div>
     </nav>
   )
