@@ -70,7 +70,7 @@ function Profile() {
   };
 
   return (
-    <div className='w-full min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 pt-24 pb-10'>
+    <div className='w-full min-h-screen bg-linear-to-br from-gray-900 to-gray-800 pt-24 pb-10'>
       <div className='max-w-2xl mx-auto px-4'>
         {/* Header */}
         <div className='flex items-center gap-4 mb-8'>
