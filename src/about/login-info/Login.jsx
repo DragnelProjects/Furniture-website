@@ -33,7 +33,7 @@ function Login() {
   };
 
   return (
-    <div className='w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 pt-20'>
+    <div className='w-full min-h-screen flex items-center justify-center bg-linear-to-br from-gray-900 to-gray-800 pt-20'>
       <div className='w-full max-w-md'>
         <div className='bg-gray-800 rounded-lg shadow-2xl p-8'>
           <h1 className='text-3xl font-bold text-center text-[#ebebeb] mb-8'>Login</h1>
