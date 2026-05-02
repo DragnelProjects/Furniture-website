@@ -2,11 +2,13 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import {RiSearch2Line, RiHeartLine, RiLuggageCartLine } from '@remixicon/react'
 import { useCart } from '../hooks/useCart'
+import { useAuth } from '../hooks/useAuth'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
 function Navbar() {
   const { getTotalItems } = useCart()
+  const { user } = useAuth()
   const location = useLocation()
   
   const getLinkClass = (path) => {
@@ -51,7 +53,24 @@ function Navbar() {
             </span>
           )}
         </Link>
-        <Link to='/login' >Login</Link>
+        
+        {user ? (
+          <div className='relative'>
+            <Link to='/profile'>
+              <button
+                className='w-10 h-10 rounded-full overflow-hidden border-2 border-[#D47968] hover:border-[#ebebeb] transition-colors'
+              >
+                <img
+                  src={user.profileImage}
+                  alt={user.username}
+                  className='w-full h-full object-cover'
+                />
+              </button>
+            </Link>
+          </div>
+        ) : (
+          <Link to='/login' className='hover:text-[#D47968] transition-colors'>Login</Link>
+        )}
       </div>
     </nav>
   )
