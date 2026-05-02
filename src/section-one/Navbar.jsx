@@ -69,7 +69,7 @@ function Navbar() {
             </Link>
           </div>
         ) : (
-          <Link to='/login' className='hover:text-[#D47968] transition-colors'>Login</Link>
+          <Link to='/login' className='text-[#d1d1d1] hover:text-[#eeedec] transition-colors'>Login</Link>
         )}
       </div>
     </nav>
